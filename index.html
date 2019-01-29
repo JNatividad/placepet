@@ -5,7 +5,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Document</title>
+      <title>Main syte</title>
       <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
             crossorigin="anonymous">
@@ -25,7 +25,7 @@
            
       }
       .cover-overlay{
-            background-image: url("img/cover-pets.jpeg");
+            background-image: url("img/cover.jpg");
             height: 100vh;
             background-attachment: fixed;
             background-size:cover;
@@ -103,6 +103,9 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
           transform: scale(1.03,1.03);
            
      }
+     .cover-overlay a{
+           text-decoration: none;
+     }
      
 
 
@@ -131,6 +134,72 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
   transform: rotate(45deg) translate(450%, 0);
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
+.team i{
+      transition: 300ms all ease-in-out;
+      color: rgb(147, 255, 192);
+      font-size: 1rem;
+}
+
+
+      @media screen and (max-width:368px){
+            .cover-overlay h1{
+                 font-size: 2rem;
+            }
+            .cover-overlay p{
+                  font-size: 1rem;
+            }
+            .cover-overlay i{
+                  font-size: 1.7rem;
+            }
+            .section-introduce h2{
+                
+                  text-align: center;
+                  font-size: 1.1rem;
+                  margin-top: 1.4rem;
+                 
+            }
+            .section-introduce p{
+                
+                text-align: center;
+                font-size: 1rem;
+                margin-top: 1.2rem;
+               
+          }
+          .clients .card{
+                margin-top: 1rem;
+          }
+          .clients .text-client{
+               text-align: center;
+               font-size: 1.8rem;
+          }
+          footer p{
+                text-justify: auto;
+                   
+          }
+          .team h3{
+              
+                font-size: 1.3rem;
+                text-align: center;
+
+            
+      }
+      .team .card{
+            margin-top: 2rem;
+            
+            
+      }
+      .team img{
+            max-height: 1rem !important;
+      }
+
+          
+          
+      }
+    
+      
+     .navbar i{
+      font-size: 2rem;
+     }
 
 
 
@@ -143,7 +212,7 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
 
       <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                  <a class="navbar-brand text-white" href="#">Navbar</a>
+                  <a class="navbar-brand text-white" href="#"><i class="fas fa-dog"></i></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -154,7 +223,7 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
                                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                               </li>
                               <li class="nav-item">
-                                    <a class="nav-link" href="#">Pets</a>
+                                    <a class="nav-link" href="#">dog breeds</a>
                               </li>
                               <li class="nav-item">
                                     <a class="nav-link" href="#">about us</a>
@@ -185,7 +254,7 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
                   <div class="row">
                         <div class="col-md-6">
 
-                              <a href="#" class="photo">
+                              <a class="photo">
 
                                     <img class="img-fluid" src="img/cover-introduce.jpeg" />
                                     <div class="glow-wrap">
@@ -230,15 +299,15 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
       <section class="p-5 mt-4 team">
 
             <div class="container">
-                  <h3 class="text-center mb-5">our team</h3>
+                  <h3 class="text-center mb-5">OURS VETERINARIS</h3>
                   <div class="row">
 
                         <div class="col-md-3">
                               <div class="card">
 
                                     <div class="card-body text-center">
-                                          <h5>Ana</h5>
-                                          <a href="#" class="photo">
+                                          <h5>JOE</h5>
+                                          <a class="photo">
 
                                                 <img class="card-img-top text-center" src="img/user1.jpeg" />
                                                 <div class="glow-wrap">
@@ -269,8 +338,8 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
                               <div class="card">
 
                                     <div class="card-body text-center">
-                                          <h5>Ana</h5>
-                                          <a href="#" class="photo">
+                                          <h5>ANA</h5>
+                                          <a class="photo">
 
                                                 <img class="card-img-top text-center" src="img/user2.jpeg" />
                                                 <div class="glow-wrap">
@@ -300,8 +369,8 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
                               <div class="card">
 
                                     <div class="card-body text-center">
-                                          <h5>Ana</h5>
-                                          <a href="#" class="photo">
+                                          <h5>MICHAEL</h5>
+                                          <a class="photo">
 
                                                 <img class="card-img-top text-center" src="img/user3.jpeg" />
                                                 <div class="glow-wrap">
@@ -331,8 +400,8 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
                               <div class="card">
 
                                     <div class="card-body text-center">
-                                          <h5>Ana</h5>
-                                          <a href="#" class="photo">
+                                          <h5>MICHELLE</h5>
+                                          <a class="photo">
 
                                                 <img class="card-img-top text-center" src="img/user4.jpeg" />
                                                 <div class="glow-wrap">
@@ -366,7 +435,7 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
 
       <section class="bg-white p-5 mt-4 clients">
             <div class="container">
-                  <h3 class="text-secondary text-center mb-4">OUR CLIENTS</h3>
+                  <h3 class="text-client text-secondary text-center mb-4">OUR CLIENTS</h3>
                   <div class="row">
                         <div class="col-md-3">
                               <div class="card bg-white">
@@ -486,7 +555,7 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
       </script>
 
       <script>
-          var scroll = new SmoothScroll('a[href*="#"]', {
+          var scroll = new SmoothScroll('.cover-overlay a[href*="#"]', {
 	speed: 2100,
 	speedAsDuration: true
 });
