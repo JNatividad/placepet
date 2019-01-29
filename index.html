@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
             crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
       <style>
 
             .navbar{
@@ -21,7 +22,7 @@
             transition: 300ms all ease-in-out;
       }
       .nav-link:hover{
-            color: rgb(202, 202, 202) !important;
+            color: rgb(187, 53, 109) !important;
            
       }
       .cover-overlay{
@@ -33,14 +34,17 @@
 
       }
       .filter-overlay{
-            background: rgba(0, 0, 0, 0.562);
+            background: rgba(0, 0, 0, 0.362);
             height: 100vh;
       }
       .cover-overlay h1{
             position: relative;
-           
+            color:white;
+            text-shadow: 0 0 1px black;
             top: -30rem;
             text-align: center;
+            font-family: 'Concert One', cursive;
+            letter-spacing: 1rem;
       }
      .cover-overlay p{
            position: relative;
@@ -69,7 +73,7 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
      .team{
            background: #161616;
      }
-     .cover-overlay i{
+     .cover-overlay .arrowD{
            font-size: 3rem;
            color: white;
            position: relative;
@@ -82,7 +86,7 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
      }
      .cover-overlay i:hover{
            transform: scale(1.2,1.2);
-           color: rgb(28, 211, 171);
+           color: rgb(187, 53, 109);
 
      }
      @keyframes animacion{
@@ -136,7 +140,7 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
 }
 .team i{
       transition: 300ms all ease-in-out;
-      color: rgb(147, 255, 192);
+      color: rgb(187, 53, 109);
       font-size: 1rem;
 }
 
@@ -176,6 +180,8 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
                 text-justify: auto;
                    
           }
+       
+
           .team h3{
               
                 font-size: 1.3rem;
@@ -201,6 +207,25 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
       font-size: 2rem;
      }
 
+     #footer{
+           background: rgb(26, 26, 26);
+     }
+
+     .team i{
+           position: absolute;
+           z-index: 300;
+     }
+     .team i:hover{
+           transform: scale(2,2);
+     }
+
+    
+     .cover-overlay .dog{
+           font-size: 3.5rem;
+           color: rgb(255, 59, 59)
+     }
+
+    
 
 
       
@@ -212,7 +237,7 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
 
       <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                  <a class="navbar-brand text-white" href="#"><i class="fas fa-dog"></i></a>
+                  <a class="navbar-brand text-white" href="#">Pets<i class="ml-2 fas fa-dog"></i></a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -238,9 +263,9 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
 
       <section class="cover-overlay">
             <div class="filter-overlay"></div>
-            <h1 id="titulo">Welcome MyPlacePet </h1>
+            <h1 id="titulo">Welcome MyPlace <i class="dog ml-2 fas fa-dog"></i><span>et</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate!</p>
-            <a data-scroll href="#footer"> <i class="fas fa-arrow-down"></i></a>
+            <a data-scroll href="#footer"> <i class="arrowD fas fa-arrow-down"></i></a>
 
 
       </section>
@@ -287,7 +312,7 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
                   <div class="row">
 
                         <div class="col-md-4 mx-auto mt-3">
-                              <a class="d-block btn btn-primary" href="">Lorem ipsum dolor sit.</a>
+                              <a class="d-block btn btn-primary" href="">More Information.</a>
                         </div>
 
 
@@ -319,7 +344,7 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
                                                 Doloribus!</p>
                                           <div class="d-flex d-row justify-content-center">
                                                 <div class="p-4">
-                                                      <i class="fab fa-instagram"></i>
+                                                      <a href="http://google.com"><i class="fab fa-instagram"></i></a>
                                                 </div>
                                                 <div class="p-4">
                                                       <i class="fab fa-facebook-f"></i>
@@ -555,10 +580,10 @@ background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, F
       </script>
 
       <script>
-          var scroll = new SmoothScroll('.cover-overlay a[href*="#"]', {
-	speed: 2100,
-	speedAsDuration: true
-});
+            var scroll = new SmoothScroll('.cover-overlay a[href*="#"]', {
+                  speed: 2100,
+                  speedAsDuration: true
+            });
       </script>
 
 </body>
