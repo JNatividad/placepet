@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+            crossorigin="anonymous">
+      <style>
+
+            .navbar{
+            background: rgb(0, 0, 0);
+            z-index: 200;
+
+      }
+      .nav-link{
+            color: white !important;
+            transition: 300ms all ease-in-out;
+      }
+      .nav-link:hover{
+            color: rgb(202, 202, 202) !important;
+           
+      }
+      .cover-overlay{
+            background-image: url("img/cover.jpg");
+            height: 100vh;
+            background-attachment: fixed;
+            background-size:cover;
+            background-position:center;
+
+      }
+      .filter-overlay{
+            background: rgba(0, 0, 0, 0.562);
+            height: 100vh;
+      }
+      .cover-overlay h1{
+            position: relative;
+           
+            top: -30rem;
+            text-align: center;
+      }
+     .cover-overlay p{
+           position: relative;
+           top: -25rem;
+           text-align: center;
+           font-size: 1.2rem;
+           color: whitesmoke;
+     }
+     .team img{
+           min-height: 20rem;
+     }
+     .clients .card{
+           border: 1.5px solid black !important;
+           border-radius:none !important;
+     }
+     .section-introduce{
+      background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1e1f20, #212222);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #161616, #252525); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+     }
+     .team .card{
+           background: rgb(31, 31, 31);
+        
+     }
+     .team{
+           background: #161616;
+     }
+     .cover-overlay i{
+           font-size: 3rem;
+           color: white;
+           position: relative;
+           display: block;
+           text-align: center;
+           top: -20rem;
+            transition: 200ms all ease-in-out;
+           animation: animacion 1.2s ease-in-out infinite;
+           
+     }
+     .cover-overlay i:hover{
+           transform: scale(1.2,1.2);
+           color: rgb(28, 211, 171);
+
+     }
+     @keyframes animacion{
+           from{
+            transform: translateY(0px);
+           }
+           50%{
+            transform: translateY(6px);
+           }
+           to{
+                 transform: translateY(0px);
+           }
+     }
+     .dog-info{
+           transition: 1s all ease-in-out;
+     }
+     .dog-info:hover{
+          transform: scale(1.03,1.03);
+           
+     }
+     
+
+
+.photo .glow-wrap{
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin-top: -10px;
+}
+
+.photo .glow{
+  display: block;
+  position:absolute;
+  width: 40%;
+  height: 200%;
+  background: rgba(255,255,255,.2);
+  top: 0;
+  filter: blur(5px);
+  transform: rotate(45deg) translate(-450%, 0);
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover .glow{
+  transform: rotate(45deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+
+
+      
+      </style>
+</head>
+
+<body>
+
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                  <a class="navbar-brand text-white" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#">Pets</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link" href="#">about us</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a class="nav-link " href="#">Contact</a>
+                              </li>
+                        </ul>
+                  </div>
+            </div>
+      </nav>
+
+      <section class="cover-overlay">
+            <div class="filter-overlay"></div>
+            <h1 id="titulo">Welcome MyPlacePet </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate!</p>
+            <a data-scroll href="#footer"> <i class="fas fa-arrow-down"></i></a>
+
+
+      </section>
+
+
+
+
+
+      <section class="p-5 section-introduce">
+            <div class="container">
+                  <div class="row">
+                        <div class="col-md-6">
+
+                              <a href="#" class="photo">
+
+                                    <img class="img-fluid" src="img/cover-introduce.jpeg" />
+                                    <div class="glow-wrap">
+                                          <i class="glow"></i>
+                                    </div>
+                              </a>
+
+
+
+
+                        </div>
+                        <div class="col-md-6 align-self-center">
+                              <h2>MORE INFORMATION</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolor deleniti quia
+                                    nemo in, recusandae sint laborum esse nam, ipsum mollitia voluptas reiciendis fugit
+                                    quaerat officia. Tempore quasi et dolorem.</p>
+                              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex fugiat optio molestiae
+                                    aliquam inventore quis sint veniam itaque asperiores illum debitis praesentium
+                                    iusto a cupiditate similique maxime eos nam, rem quaerat. Nostrum in minus fugit
+                                    quae tempore vitae quam ut!</p>
+                        </div>
+                  </div>
+            </div>
+
+      </section>
+
+      <section class="p-5 mt-4 bg-white">
+            <div class="container">
+                  <h3 class="text-center text-secondary">Lorem ipsum dolor sit.</h3>
+                  <div class="row">
+
+                        <div class="col-md-4 mx-auto mt-3">
+                              <a class="d-block btn btn-primary" href="">Lorem ipsum dolor sit.</a>
+                        </div>
+
+
+                  </div>
+
+      </section>
+
+
+      <section class="p-5 mt-4 team">
+
+            <div class="container">
+                  <h3 class="text-center mb-5">our team</h3>
+                  <div class="row">
+
+                        <div class="col-md-3">
+                              <div class="card">
+
+                                    <div class="card-body text-center">
+                                          <h5>Ana</h5>
+                                          <a href="#" class="photo">
+
+                                                <img class="card-img-top text-center" src="img/user1.jpeg" />
+                                                <div class="glow-wrap">
+                                                      <i class="glow"></i>
+                                                </div>
+                                          </a>
+
+                                          <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Doloribus!</p>
+                                          <div class="d-flex d-row justify-content-center">
+                                                <div class="p-4">
+                                                      <i class="fab fa-instagram"></i>
+                                                </div>
+                                                <div class="p-4">
+                                                      <i class="fab fa-facebook-f"></i>
+                                                </div>
+                                                <div class="p-4">
+                                                      <i class="fab fa-twitter"></i>
+                                                </div>
+                                                <div class="p-4">
+                                                      <i class="fab fa-youtube"></i>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                              <div class="card">
+
+                                    <div class="card-body text-center">
+                                          <h5>Ana</h5>
+                                          <a href="#" class="photo">
+
+                                                <img class="card-img-top text-center" src="img/user2.jpeg" />
+                                                <div class="glow-wrap">
+                                                      <i class="glow"></i>
+                                                </div>
+                                          </a>
+                                          <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Doloribus!</p>
+                                          <div class="d-flex d-row justify-content-center">
+                                                <div class="p-4">
+                                                      <i class="fab fa-instagram"></i>
+                                                </div>
+                                                <div class="p-4">
+                                                      <i class="fab fa-facebook-f"></i>
+                                                </div>
+                                                <div class="p-4">
+                                                      <i class="fab fa-twitter"></i>
+                                                </div>
+                                                <div class="p-4">
+                                                      <i class="fab fa-youtube"></i>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                              <div class="card">
+
+                                    <div class="card-body text-center">
+                                          <h5>Ana</h5>
+                                          <a href="#" class="photo">
+
+                                                <img class="card-img-top text-center" src="img/user3.jpeg" />
+                                                <div class="glow-wrap">
+                                                      <i class="glow"></i>
+                                                </div>
+                                          </a>
+                                          <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Doloribus!</p>
+                                          <div class="d-flex d-row justify-content-center">
+                                                <div class="p-4">
+                                                      <i class="fab fa-instagram"></i>
+                                                </div>
+                                                <div class="p-4">
+                                                      <i class="fab fa-facebook-f"></i>
+                                                </div>
+                                                <div class="p-4">
+                                                      <i class="fab fa-twitter"></i>
+                                                </div>
+                                                <div class="p-4">
+                                                      <i class="fab fa-youtube"></i>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                              <div class="card">
+
+                                    <div class="card-body text-center">
+                                          <h5>Ana</h5>
+                                          <a href="#" class="photo">
+
+                                                <img class="card-img-top text-center" src="img/user4.jpeg" />
+                                                <div class="glow-wrap">
+                                                      <i class="glow"></i>
+                                                </div>
+                                          </a>
+                                          <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                Doloribus!</p>
+                                          <div class="d-flex d-row justify-content-center">
+                                                <div class="p-4">
+                                                      <i class="fab fa-instagram"></i>
+                                                </div>
+                                                <div class="p-4">
+                                                      <i class="fab fa-facebook-f"></i>
+                                                </div>
+                                                <div class="p-4">
+                                                      <i class="fab fa-twitter"></i>
+                                                </div>
+                                                <div class="p-4">
+                                                      <i class="fab fa-youtube"></i>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+      </section>
+
+
+      <section class="bg-white p-5 mt-4 clients">
+            <div class="container">
+                  <h3 class="text-secondary text-center mb-4">OUR CLIENTS</h3>
+                  <div class="row">
+                        <div class="col-md-3">
+                              <div class="card bg-white">
+                                    <div class="card-body">
+                                          <img class="img-fluid" src="img/logo1.png" alt="">
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                              <div class="card bg-white">
+                                    <div class="card-body">
+                                          <img class="img-fluid" src="img/logo2.png" alt="">
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                              <div class="card bg-white">
+                                    <div class="card-body">
+                                          <img class="img-fluid" src="img/logo3.png" alt="">
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                              <div class="card bg-white">
+                                    <div class="card-body">
+                                          <img class="img-fluid" src="img/logo4.png" alt="">
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+            </div>
+
+      </section>
+
+      <section class="p-5 mt-4" id="footer">
+            <div class="container-fluid ">
+                  <footer>
+                        <div class="row">
+                              <div class="col-md-8">
+                                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+
+                                    <div class="row mt-5">
+                                          <div class="col-md-4">
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                          </div>
+                                          <div class="col-md-4">
+                                                p>Lorem ipsum dolor sit amet.</p>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                          </div>
+                                          <div class="col-md-4">
+                                                p>Lorem ipsum dolor sit amet.</p>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                          </div>
+                                    </div>
+                                    <small class="mt-5">© 2019 AMERICAN DOCUMENTARY INC.</small>
+                              </div>
+                              <div class="col-md-4 mt-5">
+                                    <label for="">Subscribe to our newsletter:.</label>
+                                    <div class="input-group input-group mb-3">
+
+                                          <input placeholder="email Address" type="text" class="form-control"
+                                                aria-label="Small" aria-describedby="inputGroup-sizing-default">
+                                          <div class="input-group-prepend">
+                                                <span class="input-group-text" id="inputGroup-sizing-sm">Suscribe</span>
+                                          </div>
+                                    </div>
+
+                              </div>
+                        </div>
+                  </footer>
+            </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0/dist/smooth-scroll.polyfills.min.js"></script>
+      <script>
+            const sr = ScrollReveal();
+            sr.reveal('p', {
+                  origin: 'top',
+                  distance: '50px',
+                  duration: 2000
+            });
+            ScrollReveal().reveal('h1', {
+                  delay: 500
+            });
+            ScrollReveal().reveal('.card', {
+                  delay: 200
+            });
+      </script>
+
+      <script>
+          var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 2100,
+	speedAsDuration: true
+});
+      </script>
+
+</body>
+
+</html>
